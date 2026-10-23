@@ -12,12 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (mobileToggle && navLinks) {
     mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+      const isOpen = navLinks.classList.toggle('active');
+      mobileToggle.classList.toggle('active', isOpen);
+      mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
 
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
+        mobileToggle.classList.remove('active');
+        mobileToggle.setAttribute('aria-expanded', 'false');
       });
     });
   }
