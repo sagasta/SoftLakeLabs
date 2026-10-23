@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Primary Meta Tags -->
+  <title>Soft Lake Labs | Custom Software Development &amp; High-Performance Systems</title>
+  <meta name="title" content="Soft Lake Labs | Custom Software Development &amp; High-Performance Systems">
+  <meta name="description" content="Engineering studio providing custom software development, distributed .NET architectures, published NuGet open-source packages, and zero-allocation Unity tools.">
+  <meta name="keywords" content="Soft Lake Labs, Custom Software Development, .NET, Native AOT, Open Source, NuGet, HybridCache.Plus, BetterRedsys, Unity Tools, LiteTask, LiteHaptics, Zero-Allocation Unity">
+  <meta name="author" content="Soft Lake Labs">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://softlakelabs.github.io/">
+  <meta property="og:title" content="Soft Lake Labs | Custom Software &amp; High-Performance Systems">
+  <meta property="og:description" content="Custom software engineering, distributed .NET backends, published NuGet packages, and high-performance Unity tools.">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230f141f'/><path d='M8 17c3-3 7-3 10 0s5 3 6 0' stroke='%2338bdf8' stroke-width='2' stroke-linecap='round' fill='none'/><circle cx='16' cy='11' r='2' fill='%2338bdf8'/></svg>">
+
+  <!-- Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="Soft Lake Labs Home">
+        <div class="logo-mark">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="7" fill="#131926" stroke="#232d42" stroke-width="1"/>
+            <path d="M7 17C10.5 13.5 14.5 13.5 18 17C21.5 20.5 25.5 20.5 26.5 17" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="16" cy="10.5" r="2" fill="#e2e8f0"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Soft Lake <span class="brand-accent">Labs</span></span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#services" class="nav-link">Custom Development</a>
+        <a href="#oss" class="nav-link">NuGet Packages</a>
+        <a href="#unity" class="nav-link">Unity Tools</a>
+        <a href="#code" class="nav-link">Code Samples</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/sagasta" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Get in Touch</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            SOFTWARE ENGINEERING &bull; OPEN SOURCE &bull; RUNTIME SYSTEMS
+          </div>
+
+          <h1 class="hero-title">
+            Custom Software. <br>
+            Engineered for <span class="text-highlight">High Performance</span>.
+          </h1>
+
+          <p class="hero-subtitle">
+            Soft Lake Labs is an independent engineering studio. We build custom software solutions, distributed .NET backends, open-source libraries on NuGet, and zero-allocation runtime tools for Unity.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#oss" class="btn btn-primary btn-lg">
+              <span>Explore NuGet Packages</span>
+            </a>
+            <a href="#unity" class="btn btn-secondary btn-lg">
+              <span>View Unity Tools</span>
+            </a>
+          </div>
+
+          <div class="hero-specs">
+            <div class="spec-item">
+              <span class="spec-label">Published NuGet Packages</span>
+              <span class="spec-val">HybridCache.Plus &bull; BetterRedsys</span>
+            </div>
+            <div class="spec-divider"></div>
+            <div class="spec-item">
+              <span class="spec-label">Unity Runtime Tools</span>
+              <span class="spec-val">LiteTask (Available) &bull; Lite Suite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Showcase: Package CLI Quick View -->
+        <div class="hero-showcase">
+          <div class="clean-panel">
+            <div class="panel-header">
+              <span class="panel-label">Package Quick Install</span>
+              <span class="panel-meta">NuGet Registry</span>
+            </div>
+
+            <div class="panel-body">
+              <!-- Package Tabs -->
+              <div class="package-selector">
+                <button class="pkg-btn active" id="btnSelectHybrid">
+                  <span class="pkg-name">HybridCache.Plus</span>
+                  <span class="pkg-tag">1.0.1</span>
+                </button>
+                <button class="pkg-btn" id="btnSelectRedsys">
+                  <span class="pkg-name">BetterRedsys</span>
+                  <span class="pkg-tag">1.0.0</span>
+                </button>
+              </div>
+
+              <!-- Terminal Box -->
+              <div class="terminal-box">
+                <div class="terminal-row">
+                  <span class="terminal-prompt">$</span>
+                  <span class="terminal-cmd" id="terminalCmd">dotnet add package HybridCache.Plus</span>
+                  <button class="terminal-copy-btn" id="btnCopyTerminal" aria-label="Copy Command">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="copy-svg">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span id="terminalCopyText">Copy</span>
+                  </button>
+                </div>
+                <p class="terminal-info" id="terminalInfo">
+                  Declarative C# source generators for L1/L2 caching with Redis backplane and Native AOT support.
+                </p>
+              </div>
+
+              <!-- Technical Attributes -->
+              <div class="spec-table">
+                <div class="spec-row">
+                  <span class="spec-key">Runtime Target</span>
+                  <span class="spec-value">.NET 10 / .NET 9 LTS</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">AOT Compatibility</span>
+                  <span class="spec-value">100% Trim-Safe &bull; Zero Reflection</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Source Code</span>
+                  <span class="spec-value"><a href="https://github.com/sagasta" target="_blank" rel="noopener noreferrer">github.com/sagasta</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: CUSTOM SOFTWARE SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">SERVICES</span>
+          <h2 class="section-title">Custom Software Development</h2>
+          <p class="section-lead">
+            Tailored engineering for companies that need clean architecture, high throughput, and reliable production systems.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <div class="service-card">
+            <h3 class="card-title">Custom Platforms &amp; Distributed APIs</h3>
+            <p class="card-text">
+              Engineered web platforms, microservices, and gRPC/REST APIs in ASP.NET Core paired with modern decoupled frontends (React, Next.js). Built with Clean Architecture to ensure long-term maintainability.
+            </p>
+            <div class="tag-row">
+              <span class="tech-tag">ASP.NET Core</span>
+              <span class="tech-tag">Clean Architecture</span>
+              <span class="tech-tag">Next.js / React</span>
+              <span class="tech-tag">REST &amp; gRPC</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h3 class="card-title">High-Throughput &amp; Native AOT</h3>
+            <p class="card-text">
+              Performance-critical services designed for high request volume and low memory overhead. We build Native AOT microservices, multi-tier Redis caching topologies, and low-latency processing pipelines.
+            </p>
+            <div class="tag-row">
+              <span class="tech-tag">Native AOT</span>
+              <span class="tech-tag">HybridCache</span>
+              <span class="tech-tag">Redis Backplane</span>
+              <span class="tech-tag">Low Latency</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h3 class="card-title">Payment Gateways &amp; Integrations</h3>
+            <p class="card-text">
+              Strongly-typed integrations for banking payment processors (Redsys, Bizum, Stripe). Includes HMAC-SHA256 signature verification, idempotent webhook handlers, and in-memory local testing simulators.
+            </p>
+            <div class="tag-row">
+              <span class="tech-tag">Redsys &amp; Bizum</span>
+              <span class="tech-tag">HMAC-SHA256</span>
+              <span class="tech-tag">Webhook Verification</span>
+              <span class="tech-tag">Idempotent APIs</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h3 class="card-title">Performance Audits &amp; Optimization</h3>
+            <p class="card-text">
+              Profiling and code refactoring to pinpoint CPU bottlenecks, unnecessary memory allocations, and database latency. We deliver measurable throughput improvements backed by benchmark verification.
+            </p>
+            <div class="tag-row">
+              <span class="tech-tag">Memory Profiling</span>
+              <span class="tech-tag">GC Reduction</span>
+              <span class="tech-tag">Span&lt;T&gt; Optimization</span>
+              <span class="tech-tag">Benchmarking</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PUBLISHED NUGET PACKAGES -->
+    <section class="section" id="oss">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">OPEN SOURCE</span>
+          <h2 class="section-title">Published NuGet Packages</h2>
+          <p class="section-lead">
+            Production-grade open-source libraries maintained by Soft Lake Labs on NuGet.org.
+          </p>
+        </div>
+
+        <div class="nuget-grid">
+          
+          <!-- PACKAGE 1: HYBRIDCACHE.PLUS -->
+          <div class="nuget-card">
+            <div class="nuget-header">
+              <div>
+                <h3 class="nuget-title">HybridCache.Plus</h3>
+                <span class="nuget-meta">Version 1.0.1 &bull; .NET 10 / LTS &bull; Native AOT</span>
+              </div>
+            </div>
+
+            <p class="nuget-desc">
+              High-performance declarative C# source generator extension for <code>Microsoft.Extensions.Caching.HybridCache</code>. Eliminates reflection and runtime emit while providing typed caching contracts, zero-allocation span formatting, and automated cache eviction decorators.
+            </p>
+
+            <div class="install-block">
+              <span class="install-label">Package Manager Install:</span>
+              <div class="install-row">
+                <code>dotnet add package HybridCache.Plus</code>
+                <button class="btn-copy-code" data-clipboard="dotnet add package HybridCache.Plus" aria-label="Copy package command">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="copy-svg">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="nuget-features">
+              <span class="features-heading">Ecosystem Modules:</span>
+              <ul class="features-list">
+                <li>
+                  <strong><code>HybridCache.Plus.Backplane.Redis</code>:</strong> Multi-instance L1 cache invalidation via Redis Pub/Sub channels.
+                </li>
+                <li>
+                  <strong><code>HybridCache.Plus.Tenancy.Redis</code>:</strong> Multi-tenant dynamic Redis L2 routing with anti-stampede concurrency protection.
+                </li>
+                <li>
+                  <strong>Source Generators:</strong> Compile-time proxy and decorator generation compatible with Native AOT trimming.
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-action-bar">
+              <a href="https://www.nuget.org/packages/HybridCache.Plus" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>View on NuGet</span>
+              </a>
+              <a href="https://github.com/sagasta/HybridCachePlus" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- PACKAGE 2: BETTERREDSYS -->
+          <div class="nuget-card">
+            <div class="nuget-header">
+              <div>
+                <h3 class="nuget-title">BetterRedsys</h3>
+                <span class="nuget-meta">Version 1.0.0 &bull; ASP.NET Core &bull; Native AOT</span>
+              </div>
+            </div>
+
+            <p class="nuget-desc">
+              Modern, strongly-typed, high-performance library for Redsys and Bizum payment gateways in ASP.NET Core. Designed for clean decoupled architectures (React, Next.js, Blazor, Mobile) with strict parameter validation and HMAC-SHA256 signature verification.
+            </p>
+
+            <div class="install-block">
+              <span class="install-label">Package Manager Install:</span>
+              <div class="install-row">
+                <code>dotnet add package BetterRedsys</code>
+                <button class="btn-copy-code" data-clipboard="dotnet add package BetterRedsys" aria-label="Copy package command">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="copy-svg">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="nuget-features">
+              <span class="features-heading">Ecosystem Modules:</span>
+              <ul class="features-list">
+                <li>
+                  <strong><code>BetterRedsys.Simulator</code>:</strong> Interactive in-memory sandbox and mock server for local development without ngrok or real bank credentials.
+                </li>
+                <li>
+                  <strong>Native Bizum Handling:</strong> Direct phone authorization flows and asynchronous notification handling.
+                </li>
+                <li>
+                  <strong>Zero-Reflection Serialization:</strong> Built for Native AOT and high-concurrency checkout backends.
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-action-bar">
+              <a href="https://www.nuget.org/packages/BetterRedsys" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <span>View on NuGet</span>
+              </a>
+              <a href="https://github.com/sagasta/BetterRedsys" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: UNITY TOOLS & RUNTIME SYSTEMS (LITETASK & UPCOMING SUITE) -->
+    <section class="section" id="unity">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">UNITY RUNTIME SYSTEMS</span>
+          <h2 class="section-title">Zero-Allocation Unity Tools</h2>
+          <p class="section-lead">
+            Tools designed to eliminate Garbage Collector stalls, minimize memory fragmentation, and optimize PlayerLoop execution in Unity.
+          </p>
+        </div>
+
+        <!-- FLAGSHIP PRODUCT: LITETASK -->
+        <div class="flagship-card">
+          <div class="flagship-header">
+            <div>
+              <div class="flagship-badge-row">
+                <h3 class="flagship-title">LiteTask for Unity</h3>
+                <span class="status-tag status-available">Available on Asset Store</span>
+              </div>
+              <span class="flagship-subtitle">Zero-GC Task Scheduler, Micro-Tweens &amp; High-Precision LiteStopwatch</span>
+            </div>
+            <a href="https://assetstore.unity.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              <span>View in Unity Asset Store</span>
+            </a>
+          </div>
+
+          <p class="flagship-desc">
+            Replaces traditional Unity coroutines and allocations with a high-performance struct pool injected directly into the native <code>UnityEngine.LowLevel.PlayerLoop</code> (Update, FixedUpdate, LateUpdate). Guarantees <strong>0 Bytes GC allocation</strong> per frame while offering complete async/await integration, automatic GameObject lifecycle binding via <code>.BindTo(this)</code>, and a dedicated in-editor diagnostic monitor.
+          </p>
+
+          <div class="flagship-specs-grid">
+            <div class="flagship-spec-box">
+              <span class="spec-box-title">0 Bytes GC per Frame</span>
+              <p class="spec-box-text">Contiguous struct pool eliminates heap allocations and boxing overhead.</p>
+            </div>
+            <div class="flagship-spec-box">
+              <span class="spec-box-title">Native PlayerLoop Injection</span>
+              <p class="spec-box-text">Executes cleanly in engine loop phases without hidden dummy GameObjects.</p>
+            </div>
+            <div class="flagship-spec-box">
+              <span class="spec-box-title">Built-in Micro-Tweening</span>
+              <p class="spec-box-text">15+ easing curves for ultra-smooth animations with zero third-party dependencies.</p>
+            </div>
+            <div class="flagship-spec-box">
+              <span class="spec-box-title">Editor Visual Monitor</span>
+              <p class="spec-box-text">Real-time pool telemetry via <em>Window &gt; Analysis &gt; LiteTask Monitor</em>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- UPCOMING UNITY TOOLS GRID -->
+        <div class="upcoming-section-header">
+          <h3 class="upcoming-title">Upcoming Unity Suite</h3>
+          <p class="upcoming-subtitle">Currently in active development at Soft Lake Labs:</p>
+        </div>
+
+        <div class="upcoming-grid">
+          
+          <div class="upcoming-card">
+            <div class="upcoming-card-header">
+              <h4 class="tool-title">LiteHaptics</h4>
+              <span class="status-tag status-upcoming">Coming Soon</span>
+            </div>
+            <span class="tool-meta">Cross-Platform Haptic Feedback Engine</span>
+            <p class="tool-text">
+              Unified HD haptic engine integrating directly with iOS CoreHaptics, Android VibrationEffect, and console/PC gamepads (Xbox, PlayStation, Switch) without heavy third-party plugins.
+            </p>
+          </div>
+
+          <div class="upcoming-card">
+            <div class="upcoming-card-header">
+              <h4 class="tool-title">LiteSave</h4>
+              <span class="status-tag status-upcoming">In Development</span>
+            </div>
+            <span class="tool-meta">Ultra-Fast Binary Serialization</span>
+            <p class="tool-text">
+              Zero-allocation binary save and state serialization. Designed for saving complex game states and snapshots without freezing gameplay frames or triggering garbage collection spikes.
+            </p>
+          </div>
+
+          <div class="upcoming-card">
+            <div class="upcoming-card-header">
+              <h4 class="tool-title">LiteSettings</h4>
+              <span class="status-tag status-upcoming">In Development</span>
+            </div>
+            <span class="tool-meta">Reactive Game Configuration Manager</span>
+            <p class="tool-text">
+              Decoupled, zero-overhead settings manager for graphics, audio, keybindings, and accessibility options with immediate disk persistence and event-driven updates.
+            </p>
+          </div>
+
+          <div class="upcoming-card">
+            <div class="upcoming-card-header">
+              <h4 class="tool-title">LiteMap</h4>
+              <span class="status-tag status-upcoming">Planned</span>
+            </div>
+            <span class="tool-meta">Spatial Indexing &amp; Grid Utilities</span>
+            <p class="tool-text">
+              Cache-friendly 2D and 3D spatial partitioning grids for high-performance proximity queries, entity clustering, and fast spatial Lookups.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CODE SAMPLES -->
+    <section class="section" id="code">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">CODE SAMPLES</span>
+          <h2 class="section-title">Implementation Examples</h2>
+          <p class="section-lead">
+            Clean, strongly-typed code patterns across .NET and Unity.
+          </p>
+        </div>
+
+        <div class="code-box">
+          <div class="code-tabs-header">
+            <div class="code-tabs">
+              <button class="tab-btn active" data-tab="snippet-hybrid">HybridCache.Plus</button>
+              <button class="tab-btn" data-tab="snippet-redsys">BetterRedsys</button>
+              <button class="tab-btn" data-tab="snippet-litetask">Unity LiteTask (0 GC)</button>
+            </div>
+            <button class="btn-copy-snippet" id="btnCopySnippet" aria-label="Copy Code Snippet">
+              <span id="copySnippetText">Copy</span>
+            </button>
+          </div>
+
+          <div class="code-panel">
+            <!-- TAB 1 -->
+            <pre class="snippet-content active" id="snippet-hybrid"><code><span class="kw">using</span> <span class="typ">HybridCache.Plus</span>;
+<span class="kw">using</span> <span class="typ">Microsoft.Extensions.Caching.Hybrid</span>;
+
+<span class="cm">// Declarative interface: C# Source Generator generates caching decorators at compile time</span>
+<span class="kw">public interface</span> <span class="typ">IUserRepository</span>
+{
+    [<span class="typ">HybridCached</span>(Key = <span class="str">"user:{userId}"</span>, ExpirationSeconds = <span class="num">300</span>, LocalCacheExpirationSeconds = <span class="num">60</span>)]
+    <span class="typ">ValueTask</span>&lt;<span class="typ">UserProfile</span>&gt; <span class="fn">GetByIdAsync</span>(<span class="typ">Guid</span> userId, <span class="typ">CancellationToken</span> ct = <span class="kw">default</span>);
+
+    [<span class="typ">HybridEvict</span>(Key = <span class="str">"user:{profile.Id}"</span>)]
+    <span class="typ">ValueTask</span> <span class="fn">UpdateProfileAsync</span>(<span class="typ">UserProfile</span> profile, <span class="typ">CancellationToken</span> ct = <span class="kw">default</span>);
+}
+
+<span class="cm">// Registration with Redis L1 backplane (Program.cs):</span>
+<span class="kw">var</span> builder = <span class="typ">WebApplication</span>.<span class="fn">CreateBuilder</span>(args);
+builder.<span class="prop">Services</span>.<span class="fn">AddHybridCache</span>();
+builder.<span class="prop">Services</span>.<span class="fn">AddHybridCachePlusBackplaneRedis</span>(options =&gt; 
+{
+    options.<span class="prop">Configuration</span> = builder.<span class="prop">Configuration</span>.<span class="fn">GetConnectionString</span>(<span class="str">"redis"</span>);
+});</code></pre>
+
+            <!-- TAB 2 -->
+            <pre class="snippet-content" id="snippet-redsys"><code><span class="kw">using</span> <span class="typ">BetterRedsys</span>;
+<span class="kw">using</span> <span class="typ">BetterRedsys.Models</span>;
+
+<span class="cm">// Native AOT payment endpoint in ASP.NET Core</span>
+<span class="kw">var</span> builder = <span class="typ">WebApplication</span>.<span class="fn">CreateSlimBuilder</span>(args);
+builder.<span class="prop">Services</span>.<span class="fn">AddBetterRedsys</span>(builder.<span class="prop">Configuration</span>.<span class="fn">GetSection</span>(<span class="str">"Redsys"</span>));
+
+<span class="kw">var</span> app = builder.<span class="fn">Build</span>();
+
+app.<span class="fn">MapPost</span>(<span class="str">"/api/checkout"</span>, (<span class="typ">IRedsysClient</span> redsys, <span class="typ">OrderRequest</span> req) =&gt;
+{
+    <span class="kw">var</span> payment = redsys.<span class="fn">CreatePaymentParameters</span>(<span class="kw">new</span> <span class="typ">PaymentOrder</span>
+    {
+        OrderNumber = req.<span class="prop">OrderId</span>,
+        AmountInCents = req.<span class="prop">AmountCents</span>,
+        Currency = <span class="typ">RedsysCurrency</span>.EUR,
+        TransactionType = <span class="typ">TransactionType</span>.Authorisation,
+        PaymentMethod = <span class="typ">PaymentMethod</span>.BizumOrCard
+    });
+
+    <span class="kw">return</span> <span class="typ">Results</span>.<span class="fn">Ok</span>(payment);
+});</code></pre>
+
+            <!-- TAB 3 -->
+            <pre class="snippet-content" id="snippet-litetask"><code><span class="kw">using</span> <span class="typ">UnityEngine</span>;
+<span class="kw">using</span> <span class="typ">SoftLake.LiteTask</span>;
+<span class="kw">using</span> <span class="typ">SoftLake.LiteTask.Easing</span>;
+
+<span class="cm">// Zero-allocation task scheduling and tweening in Unity</span>
+<span class="kw">public class</span> <span class="typ">EntityController</span> : <span class="typ">MonoBehaviour</span>
+{
+    <span class="kw">private void</span> <span class="fn">TriggerAction</span>()
+    {
+        <span class="cm">// 0 Bytes GC: Contiguous struct pool in PlayerLoop tied to GameObject lifecycle</span>
+        <span class="typ">LiteTask</span>.<span class="fn">Delay</span>(<span class="num">1.5f</span>, () =&gt; <span class="fn">ExecuteTask</span>()).<span class="fn">BindTo</span>(<span class="kw">this</span>);
+
+        <span class="typ">LiteTask</span>.<span class="fn">Tween</span>(
+            from: <span class="num">1.0f</span>, 
+            to: <span class="num">1.3f</span>, 
+            duration: <span class="num">0.3f</span>, 
+            onUpdate: v =&gt; transform.localScale = <span class="typ">Vector3</span>.one * v,
+            ease: <span class="typ">EaseType</span>.OutQuad
+        ).<span class="fn">BindTo</span>(<span class="kw">this</span>);
+    }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT FORM -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-header">
+            <span class="section-kicker">GET IN TOUCH</span>
+            <h2 class="contact-title">Direct Inquiry &amp; Support</h2>
+            <p class="contact-lead">
+              Send a direct message regarding custom development, Unity tool support, or open-source collaboration. Your message is dispatched securely.
+            </p>
+          </div>
+
+          <form id="contactForm" class="contact-form" action="https://formsubmit.co/am1zYWdhc3RhQGdtYWlsLmNvbQ==" method="POST" autocomplete="off">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Your Name</label>
+                <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Your Email</label>
+                <input type="email" id="senderEmail" name="email" class="form-input" placeholder="alex@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inquiryTopic" class="form-label">Inquiry Area</label>
+              <select id="inquiryTopic" name="topic" class="form-select">
+                <option value="Custom Software Development">Custom Software Development</option>
+                <option value="Unity Tools &amp; LiteTask Support">Unity Tools &amp; LiteTask Support</option>
+                <option value="Open Source &amp; NuGet Libraries">Open Source &amp; NuGet Libraries</option>
+                <option value="General Technical Question">General Technical Question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage" class="form-label">Message</label>
+              <textarea id="senderMessage" name="message" rows="5" class="form-textarea" placeholder="Describe your project, question, or requirements..." required></textarea>
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="btn btn-primary btn-lg" id="btnSubmitForm">
+                <span id="btnSubmitText">Send Message</span>
+              </button>
+              <span class="form-privacy-note">Privacy: Personal emails are not published publicly.</span>
+            </div>
+
+            <!-- Feedback Notifications -->
+            <div id="formSuccess" class="form-alert form-alert-success" style="display: none;">
+              Message sent successfully. We will get back to you shortly.
+            </div>
+            <div id="formError" class="form-alert form-alert-error" style="display: none;">
+              There was an issue sending your message. Please try again or check your connection.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-col-main">
+        <span class="footer-brand">Soft Lake Labs</span>
+        <p class="footer-desc">
+          Custom software engineering, high-throughput .NET architectures, and zero-allocation runtime tools for Unity.
+        </p>
+        <span class="footer-copyright">&copy; 2026 Soft Lake Labs. All rights reserved.</span>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-header">Open Source &amp; Tools</span>
+        <ul class="footer-links">
+          <li><a href="https://www.nuget.org/packages/HybridCache.Plus" target="_blank" rel="noopener noreferrer">HybridCache.Plus (NuGet)</a></li>
+          <li><a href="https://www.nuget.org/packages/BetterRedsys" target="_blank" rel="noopener noreferrer">BetterRedsys (NuGet)</a></li>
+          <li><a href="#unity">LiteTask for Unity</a></li>
+          <li><a href="#unity">Lite Suite Roadmap</a></li>
+          <li><a href="https://github.com/sagasta" target="_blank" rel="noopener noreferrer">GitHub Repositories</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-header">Studio</span>
+        <ul class="footer-links">
+          <li><a href="#services">Custom Development</a></li>
+          <li><a href="#oss">NuGet Packages</a></li>
+          <li><a href="#unity">Unity Tools</a></li>
+          <li><a href="#code">Code Samples</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
